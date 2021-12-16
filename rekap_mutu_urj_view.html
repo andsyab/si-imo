@@ -8,19 +8,70 @@
     <title>Rekap Mutu URJ</title>
 </head>
 <h3 class="Judul">Rekapitulasi Mutu</h3>
-<form action="search-tanggal">
+<form name="formFind" action="rekap_mutu_urj_view.html" method="get">
+    <label for="tglPencarian">Tanggal</label>
+    <input type="date" id="tglPencarian">
+    <br>
+    <button type="submit">Cari</button>
+</form>
+<hr>
+<form action="rekap_mutu_urj_view.html" method="get">
     <table border="2" cellspacing="0" cellpadding="0">
+        <!-- ini table rekap 1 -->
         <tr>
-            <th rowspan="2">Filter berdasarkan tanggal</th>
-        </tr>
-        <tr>
-            <td>Tanggal</td>
-            <td>
-                <input type="date" required name="search date">
+            <td colspan="3" align="left" width=100%>
+                Kode: A.001<br>
+                Indikator: Waktu Tunggu Rawat Jalan<br>
+                Num: Jumlah kumulatif waktu tunggu pasien rawat jalan yang disurvey<br>
+                Denum: Jumlah seluruh pasien rawat jalan yang disurvey<br>
             </td>
         </tr>
-    </table>
+        <tr align="left">
+            <td width=20%>Tanggal</td>
+            <td width=80%>(tanggal)</td>
+        </tr>
+        <tr align="left">
+            <td>Num</td>
+            <td>(angka)</td>
+        </tr>
+        <tr align="left">
+            <td>Denum</td>
+            <td>(angka)</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <hr>
+            </td>
+        </tr>
+        <!-- ini table rekap 2 -->
+        <tr>
+            <td colspan="3" align="left" width=100%>
+                Kode: A.001<br>
+                Indikator: Waktu Tunggu Rawat Jalan<br>
+                Num: Jumlah kumulatif waktu tunggu pasien rawat jalan yang disurvey<br>
+                Denum: Jumlah seluruh pasien rawat jalan yang disurvey<br>
+            </td>
+        </tr>
+        <tr align="left">
+            <td width=20%>Tanggal</td>
+            <td width=80%>(tanggal)</td>
+        </tr>
+        <tr align="left">
+            <td>Num</td>
+            <td>(angka)</td>
+        </tr>
+        <tr align="left">
+            <td>Denum</td>
+            <td>(angka)</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <hr>
+            </td>
+        </tr>
 
+        
+    </table>
 </form>
 
 <body>
